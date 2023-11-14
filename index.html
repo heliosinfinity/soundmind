@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Sound Mind Clinic Home Page </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/homepage.css">
+</head>
+
+<body>
+ 
+    <div class="header">   
+        <nav><img class="sound-mind-logo" src="Images/Sound Mind.png">
+            <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="Services.html">Services</a>
+        </li>
+        <li>
+            <a href="experts.html">Experts</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+         </ul> </nav>
+        </div>
+
+        <div class="Text-Body">
+<h1> Restore happiness in your life</h1>
+<h2>Get expert consultation, tests, diagnosis and mental health support from experts.<br><br> </h2>
+
+<button class="open-button" onclick="openForm()">Get Inquiries</button>
+
+<div class="form-popup" id="myForm">
+  
+  <form method= "POST" action="https://script.google.com/macros/s/AKfycbx9r35fGrAFKABqWR4PJnC8GYmf6Mj6PjTiG0vBW90IFOgWhWjHQNHJB3uuEuX-H7iY/exec" class="form-container"  action="/action_page.php" name="contact-form" >
+    <img class="phonebookimg" src="Images/Untitled (16).png">
+    <h3>Contact Us</h3>
+    <h4>Our team will contact you for appointment.</h4><br>
+
+    <label for="Full_Name"><b>Your Name</b></label>
+    <input type="text" id="Full_Name" placeholder="Enter your name" name="Full_Name" required>
+
+    <label for="User_Email"><b>Your Email</b></label>
+    <input type="text" id="User_Email" placeholder="Enter your Email" name="User_Email"" required>
+
+    <label for="Mobile_Number"><b>Phone Number</b></label>
+    <input type="number" id="Mobile_Number" placeholder="Enter Phone Number" name="Mobile_Number" required>
+    <label for="User_Message"><B>Your Message</B></label><br>
+           <textarea id="User_Message" name="User_Message" placeholder="Write something to us.." style="height: 100px; width: 420px; border-radius: 8px; border: 0px; margin-bottom: 15px;""  ></textarea>
+
+     <input type="submit" value="Submit" class="btn"></button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Maybe Later</button>
+  </form>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/young-beautiful-hipster-woman-flower-field-sunset-freed.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div  class="numbertext">2 / 3</div>
+      <img src="Images/woman-therapy-session-attentive-psychologist-attentive-psychologist-holding-pencil-her-hands-making-written-notes-while-listening-her-client.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img  src="Images/depressed-woman-having-psychotherapy-session-doctor-s-office.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+  
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <div class="footer">
+
+    <div class="right-footer">
+<b>Sound Mind</b> <br>
+
+Mental Health Clinic and Health Facility
+    </br>
+</div>
+
+<div class="left-footer">
+
+<img class="location-footer" src="Icons/icons8-google-maps.svg"> Charlestown, Laspina <br>
+<img class="telephone-footer" src="Icons/icons8-telephone-64.png"> 9900000000</br>
+<img class="mail-footer" src="Icons/icons8-gmail-50.png">soundmind.las@gmail.com<br>
+
+</div>
+
+<div class="center-footer"> <br> Follow Us on <br><br>
+ <a href="https://www.facebook.com/" target="_blank"><img class="footer-facebook" src="Icons/icons8-facebook-50.png"> </a>
+ <a href="https://twitter.com/?lang=en" target="_blank"><img class="footer-twitter"  src="Icons/icons8-twitter-50.png"  ></a>
+  <a href="https://www.linkedin.com/" target="_blank"><img class="footer-linkedin" src="Icons/icons8-linked-in-50.png" ></a>
+</div>
+<hr>
+<div class="bottom-footer">
+
+<li style="display: inline-block; ">
+    <a href="index.html"  style=" color:white; text-decoration: none;">Home</a>
+</li>
+<li style="display: inline-block; " >
+    <a href="Services.html" style=" color:white; text-decoration: none; " > Services</a>
+</li>
+<li style="display: inline-block;">
+    <a href="experts.html"style=" color:white; text-decoration: none;  ">Experts</a>
+</li>
+<li style="display: inline-block;">
+    <a href="contactus.html" style=" color:white; text-decoration: none;">Contact-Us</a>
+</li>
+
+</div>
+
+<div class="bottomfooter-2">
+    <li style="display: inline-block; ">
+        <a href="Privacy.html" style="color: white; text-decoration: none;"> Privacy-Policy </a>
+        </li>
+        <li style=" display:inline-block;">
+            <a href="termsofuse.html" style="margin-left: 20px; ; color: white; text-decoration: none; word-spacing: normal;"> Terms of Use </a>
+            </li>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}  
+</script>
+<script>
+  const scriptURL ='https://script.google.com/macros/s/AKfycbx9r35fGrAFKABqWR4PJnC8GYmf6Mj6PjTiG0vBW90IFOgWhWjHQNHJB3uuEuX-H7iY/exec'
+
+
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => alert("Thank you! your form is submitted successfully." ))
+.then(() => { window.location.reload(); })
+.catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>

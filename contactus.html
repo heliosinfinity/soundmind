@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/contactus.css">
+
+</head>
+
+<body>
+    <div class="header">   
+        <nav><img class="sound-mind-logo" src="Images/Sound Mind.png">
+            <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="Services.html">Services</a>
+        </li>
+        <li>
+            <a href="experts.html">Experts</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+         </ul> </nav>
+        </div>
+                   
+            <div class="side-body">
+                <h1>Contact Us</h1>
+                <p>Fill up the form on the side and get in touch with us for inquiries. Our team will reach out to you. </p></div>
+                <div class="call-center-image">
+                    <img class="call-center1" src="Images/nogi.gif">
+                </div>
+
+                <div class="form-backdrop" >
+                    <form method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbx9r35fGrAFKABqWR4PJnC8GYmf6Mj6PjTiG0vBW90IFOgWhWjHQNHJB3uuEuX-H7iY/exec" class="form-1" action="/action_page.php" name="contact-form">
+                    <label for="Full_Name">Full Name</label>
+                       <input type="text" id="Full_Name" name="Full_Name"placeholder="Insert your name here">
+            
+                       <label for="Mobile_Number">Mobile Number</label>
+                       <input type="number" id="Mobile_Number" name="Mobile_Number"placeholder="Insert your Contact Number" > <br>
+            
+                       <label for="User_Email">Your Email ID</label>
+                       <input type="email" id="User_Email" name="User_Email" placeholder="Insert your valid Email ID"> <br>
+            
+                       <label for="User_Message">Your Message</label><br>
+                       <textarea id="User_Message" name="User_Message" placeholder="Write something to us.." style="height: 100px; width: 740px; border-radius: 8px; border: 0px;""  ></textarea>
+             
+                       <input type="submit" value="Submit">
+                       </form></div>
+
+                       
+                       <div class="footer">
+
+                        <div class="right-footer">
+                    <b>Sound Mind</b> <br>
+                    
+                    Mental Health Clinic and Health Facility
+                        </br>
+                    </div>
+                    
+                    <div class="left-footer">
+                    
+                    <img class="location-footer" src="Icons/icons8-google-maps.svg"> Charlestown, Laspina <br>
+                    <img class="telephone-footer" src="Icons/icons8-telephone-64.png"> 9900000000</br>
+                    <img class="mail-footer" src="Icons/icons8-gmail-50.png">soundmind.las@gmail.com<br>
+                    
+                    </div>
+                    
+                    <div class="center-footer"> <br> Follow Us on <br><br>
+                     <a href="https://www.facebook.com/" target="_blank"><img class="footer-facebook" src="Icons/icons8-facebook-50.png"> </a>
+                     <a href="https://twitter.com/?lang=en" target="_blank"><img class="footer-twitter"  src="Icons/icons8-twitter-50.png"  ></a>
+                      <a href="https://www.linkedin.com/" target="_blank"><img class="footer-linkedin" src="Icons/icons8-linked-in-50.png" ></a>
+                    </div>
+                    <hr>
+                    <div class="bottom-footer">
+                    
+                        <li style="display: inline-block; ">
+                            <a href="index.html"  style=" color:white; text-decoration: none;">Home</a>
+                        </li>
+                        <li style="display: inline-block; " >
+                            <a href="Services.html" style=" color:white; text-decoration: none; " > Services</a>
+                        </li>
+                        <li style="display: inline-block;">
+                            <a href="experts.html"style=" color:white; text-decoration: none;  ">Experts</a>
+                        </li>
+                        <li style="display: inline-block;">
+                            <a href="contactus.html" style=" color:white; text-decoration: none;">Contact-Us</a>
+                        </li>
+                    
+                    </div>
+                    
+                    <div class="bottomfooter-2">
+                        <li style="display: inline-block; ">
+                            <a href="Privacy.html" style="color: white; text-decoration: none;"> Privacy-Policy </a>
+                            </li>
+                            <li style=" display:inline-block;">
+                                <a href="termsofuse.html" style="margin-left: 20px; ; color: white; text-decoration: none; word-spacing: normal;"> Terms of Use </a>
+                                </li>
+                    </div>       
+                      
+            
+           
+       
+        <script>
+            const scriptURL ='https://script.google.com/macros/s/AKfycbx9r35fGrAFKABqWR4PJnC8GYmf6Mj6PjTiG0vBW90IFOgWhWjHQNHJB3uuEuX-H7iY/exec'
+        
+        
+        
+        const form = document.forms['contact-form']
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thank you! your form is submitted successfully." ))
+          .then(() => { window.location.reload(); })
+          .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+</body>
+
+</html>
